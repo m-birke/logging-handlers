@@ -6,7 +6,7 @@ from ssl import SSLContext
 class HTTPHandlerCustomHeader(HTTPHandler):
     def __init__(self, host: str, url: str, method: str = "GET", secure: bool = False, header_key_value_pairs: list[tuple[str, str]] | None = None, context: SSLContext | None = None) -> None:
         super().__init__(host=host, url=url, method=method, secure=secure, credentials=None, context=context)
-        self.header_key_value_pairs = header_key_value_pairs
+        self.header_key_value_pairs = header_key_value_pairs if header_key_value_pairs else []
 
     def emit(self, record: LogRecord) -> None:
         """
