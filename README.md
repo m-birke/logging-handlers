@@ -20,6 +20,10 @@ This package contains the following loggers:
 - `HTTPHandlerCustomHeader`: Like `logging.handlers.HTTPHandler` but with full freedom of the HTTP header
 - `BufferingSMTPHandler`: Buffers the logs like `logging.handlers.BufferingHandler` and sends it via smtp
 
+Similar projects with differen handlers:
+
+- [logging-nice-handlers](https://pypi.org/project/logging-nice-handlers/)
+
 ## Installation
 
 ```console
