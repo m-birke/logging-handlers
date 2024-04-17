@@ -22,7 +22,7 @@ class BufferingSMTPHandler(logging.handlers.BufferingHandler):
     :param subject: mail subject
     """
 
-    def __init__(self, mailhost: str, fromaddr: str, toaddrs: list[str], subject: str, capacity:int):
+    def __init__(self, mailhost: str, fromaddr: str, toaddrs: list[str], subject: str, capacity: int):
         logging.handlers.BufferingHandler.__init__(self, capacity=capacity)
 
         self.mailhost = mailhost
