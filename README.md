@@ -1,7 +1,8 @@
-# logging-handlers
+# logging-extended-handlers
 
-[![PyPI - Version](https://img.shields.io/pypi/v/logging-handlers.svg)](https://pypi.org/project/logging-handlers)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/logging-handlers.svg)](https://pypi.org/project/logging-handlers)
+[![PyPI - Version](https://img.shields.io/pypi/v/logging-extended-handlers.svg)](https://pypi.org/project/logging-extended-handlers)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/logging-extended-handlers.svg)](https://pypi.org/project/logging-extended-handlers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 -----
 
@@ -13,9 +14,9 @@
 ## Installation
 
 ```console
-pip install logging-handlers
+pip install logging-extended-handlers
 ```
 
 ## License
 
-`logging-handlers` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+`logging-extended-handlers` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

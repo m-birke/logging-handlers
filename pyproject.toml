@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "logging-handlers"
+name = "logging-extended-handlers"
 dynamic = ["version"]
 description = "Extending logging.handlers"
 readme = "README.md"
@@ -32,7 +32,7 @@ Issues = "https://github.com/m-birke/logging-handlers/issues"
 Source = "https://github.com/m-birke/logging-handlers"
 
 [tool.hatch.version]
-path = "src/logging_handlers/__about__.py"
+path = "src/logging_extended_handlers/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -59,19 +59,19 @@ dependencies = [
   "mypy>=1.0.0",
 ]
 [tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:src/logging_handlers tests}"
+check = "mypy --install-types --non-interactive {args:src/logging_extended_handlers tests}"
 
 [tool.coverage.run]
-source_pkgs = ["logging_handlers", "tests"]
+source_pkgs = ["logging_extended_handlers", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/logging_handlers/__about__.py",
+  "src/logging_extended_handlers/__about__.py",
 ]
 
 [tool.coverage.paths]
-logging_handlers = ["src/logging_handlers", "*/logging-handlers/src/logging_handlers"]
-tests = ["tests", "*/logging-handlers/tests"]
+logging_extended_handlers = ["src/logging_extended_handlers", "*/logging-extended-handlers/src/logging_extended_handlers"]
+tests = ["tests", "*/logging-extended-handlers/tests"]
 
 [tool.coverage.report]
 exclude_lines = [
