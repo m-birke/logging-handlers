@@ -23,6 +23,9 @@ This package contains the following loggers:
 Similar projects with differen handlers:
 
 - [logging-nice-handlers](https://pypi.org/project/logging-nice-handlers/)
+- [external-logging-handlers](https://pypi.org/project/external-logging-handlers/)
+- [aws-logging-handlers](https://pypi.org/project/aws-logging-handlers/)
+- []()
 
 ## Installation
 
