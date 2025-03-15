@@ -9,10 +9,19 @@ class HTTPHandlerCustomHeader(HTTPHandler):
         host: str,
         url: str,
         method: str = "GET",
-        secure: bool = False,
+        secure: bool = True,
         header_key_value_pairs: list[tuple[str, str]] | None = None,
         context: SSLContext | None = None,
     ) -> None:
+        """Logging handler for HTTP requests with the possiblity to provide custom headers.
+
+        :param host: https://my-host.com
+        :param url: /path/to/endpoint
+        :param method: HTTP verb, defaults to "GET"
+        :param secure: HTTPS for True, HTTP for False, defaults to True
+        :param header_key_value_pairs: _description_, defaults to None
+        :param context: _description_, defaults to None
+        """
         super().__init__(host=host, url=url, method=method, secure=secure, credentials=None, context=context)
         self.header_key_value_pairs = header_key_value_pairs if header_key_value_pairs else []
 
