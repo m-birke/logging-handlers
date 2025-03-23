@@ -1,6 +1,7 @@
 from logging import LogRecord
 from logging.handlers import HTTPHandler
 from ssl import SSLContext
+from typing import List, Tuple, Optional
 
 
 class HTTPHandlerCustomHeader(HTTPHandler):
@@ -10,8 +11,8 @@ class HTTPHandlerCustomHeader(HTTPHandler):
         url: str,
         method: str = "GET",
         secure: bool = True,
-        header_key_value_pairs: list[tuple[str, str]] | None = None,
-        context: SSLContext | None = None,
+        header_key_value_pairs: Optional[List[Tuple[str, str]]] = None,
+        context: Optional[SSLContext] = None,
     ) -> None:
         """Logging handler for HTTP requests with the possiblity to provide custom headers.
 
