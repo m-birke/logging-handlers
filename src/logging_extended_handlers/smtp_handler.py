@@ -7,7 +7,7 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
-from typing import Optional
+from typing import List, Optional
 
 
 class BufferingSMTPHandler(logging.handlers.BufferingHandler):
@@ -22,7 +22,7 @@ class BufferingSMTPHandler(logging.handlers.BufferingHandler):
     :param subject: mail subject
     """
 
-    def __init__(self, mailhost: str, fromaddr: str, toaddrs: list[str], subject: str, capacity: int):
+    def __init__(self, mailhost: str, fromaddr: str, toaddrs: List[str], subject: str, capacity: int):
         logging.handlers.BufferingHandler.__init__(self, capacity=capacity)
 
         self.mailhost = mailhost
