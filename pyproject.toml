@@ -38,6 +38,7 @@ path = "src/logging_extended_handlers/__about__.py"
 dependencies = [
   "coverage[toml]>=6.5",
   "pytest",
+  "pytest-dependency",
   "pytest_socket",
 ]
 [tool.hatch.envs.default.scripts]
