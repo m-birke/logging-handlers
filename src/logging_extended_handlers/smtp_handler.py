@@ -76,7 +76,7 @@ class BufferingSMTPHandler(logging.handlers.BufferingHandler):
         encoders.encode_base64(part)
         part.add_header(
             "Content-Disposition",
-            f'attachment; filename="{str(attachment_path.name)}"',
+            f'attachment; filename="{attachment_path.name!s}"',
         )
         return part
 

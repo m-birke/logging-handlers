@@ -1,7 +1,7 @@
 from logging import LogRecord
 from logging.handlers import HTTPHandler
 from ssl import SSLContext
-from typing import List, Tuple, Optional
+from typing import List, Optional, Tuple
 
 
 class HTTPHandlerCustomHeader(HTTPHandler):
