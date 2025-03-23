@@ -7,21 +7,32 @@ name = "logging-extended-handlers"
 dynamic = ["version"]
 description = "Extending logging.handlers"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 license = "MIT"
-keywords = ["logging", "log", "handlers", "logging handlers", "log handlers", "http"]
+keywords = [
+  "logging",
+  "log",
+  "handlers",
+  "logging handlers",
+  "log handlers",
+  "http",
+  "header",
+  "headers",
+  "smtp",
+  "mail",
+]
 authors = [
   { name = "mbirke", email = "wesci@web.de" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3.7",
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: Implementation :: CPython",
 ]
 dependencies = []
