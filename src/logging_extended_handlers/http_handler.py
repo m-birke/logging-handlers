@@ -31,7 +31,7 @@ class HTTPHandlerCustomHeader(HTTPHandler):
 
         Send the record to the web server as a percent-encoded dictionary
 
-        header_key_value_pairs represents arbitrary keay value pairs which are put into the header
+        header_key_value_pairs represents arbitrary key value pairs which are put into the header
         """
         try:
             import urllib.parse
@@ -56,11 +56,7 @@ class HTTPHandlerCustomHeader(HTTPHandler):
                 h.putheader("Content-type", "application/x-www-form-urlencoded")
                 h.putheader("Content-length", str(len(data)))
             for key, value in self.header_key_value_pairs:
-                import base64
-
-                k = base64.b64encode(key.encode("utf-8")).strip().decode("ascii")
-                v = base64.b64encode(value.encode("utf-8")).strip().decode("ascii")
-                h.putheader(k, v)
+                h.putheader(str(key), str(value))
             h.endheaders()
             if self.method == "POST":
                 h.send(data.encode("utf-8"))
